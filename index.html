@@ -4,7 +4,7 @@
 	<title>Index</title>
 </head>
 <body>
-<button id="meuBotao" value="teste">Clique Aqui</button>
+<button id="meuBotao" value="teste">Clique Aqui Para ver o programa rodar</button>
 
 <script>
 	var botao = document.getElementById("meuBotao");
@@ -12,10 +12,9 @@
 	var valor = botao.value;
 
 	botao.addEventListener("click", function(){
-		contado++;
-		console.log("O botao foi clicado");
+		contado++;		
 		console.log("O botao foi clicado: " + contado + " vezes");
-		console.log(valor + contado);
+		console.log(valor +  contado);
 	})
 
 	
