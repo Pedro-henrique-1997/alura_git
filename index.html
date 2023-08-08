@@ -6,6 +6,8 @@
 <body>
 <button id="meuBotao" value="teste">Clique Aqui Para ver o programa rodar</button>
 
+<button onclick="aparecerAlerta()">Clique para aparecer o alerta</button>
+
 <script>
 	var botao = document.getElementById("meuBotao");
 	var contado = 0;
@@ -17,7 +19,9 @@
 		console.log(valor +  contado);
 	})
 
-	
+	function aparecerAlerta(){
+		alert("teste");
+	}
 </script>
 </body>
 </html>
