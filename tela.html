@@ -10,6 +10,22 @@
     </script>
 </head>
 <body>
+    <input type="text" name="texto" id="textID">
+
+    <button onclick="verificarCampo()">Verificar</button>
+
     <button onclick="openPopup()">Abrir Popup</button>
+
+    <script>
+    	function verificarCampo() {
+    		var campo =  document.getElementById("textID");
+
+    		if (campo.value !== "") {
+    			console.log("O campo não está vazio");
+    		}else{
+    			console.log("O campo está vazio");
+    		}
+    	}
+    </script>
 </body>
 </html>
