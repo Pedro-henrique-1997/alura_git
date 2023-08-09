@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Campo em html</title>
+</head>
+<body>
+
+	<input type="text" name="campo" id="campoId" placeholder="insira um valor:">
+
+	<button id="botao" onclick="verificarCampo()">Testar</button>
+
+	<script>
+		function verificarCampo()
+		{
+			var campo = document.getElementById("campoId");
+
+			if(campo.value !== ""){
+				alert("Campo preenchido");
+			}else{
+				alert("Campo vazio");
+			}
+		}
+	</script>
+</body>
+</html>
