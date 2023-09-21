@@ -12,10 +12,11 @@
 	<script>
 		function verificarCampo()
 		{
-			var campo = document.getElementById("campoId");
+			var campo = document.getElementById("campoID");
 
 			if(campo.value !== ""){
 				alert("Campo preenchido");
+				console.log(`Valor a ser inserido ${campo.value}`);
 			}else{
 				alert("Campo vazio");
 			}
